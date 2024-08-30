@@ -1,7 +1,8 @@
 <% if (post.categories && post.categories.length){ %>
   <div class="article-category">
-    <%- list_categories(post.categories, {
+    <%- list_categories(landscapeCategoryPrepare(post.categories, site.data.categories), {
       show_count: false,
+      transform: createLandscapeCategoryTransform(site.data.categories),
       class: 'article-category',
       style: 'none',
       separator: '►'

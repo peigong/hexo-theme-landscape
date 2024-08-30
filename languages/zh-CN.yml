@@ -1,4 +1,4 @@
-categories: 分门别类
+categories: 分类
 search: 搜索
 tags: 标签
 tagcloud: 标签云
@@ -9,7 +9,7 @@ comment: 留言
 archive_a: 归档
 archive_b: 归档：%s
 page: 第 %d 页
-recent_posts: 最新
+recent_posts: 最新文章
 newer: 前一篇
 older: 后一篇
 share: 分享

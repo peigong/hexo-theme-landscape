@@ -10,7 +10,7 @@ const createLandscapeCategoryTransform = (map) => {
      */
     return (name) => {
         const cat = map[name] || {}
-        return cat.alias || name
+        return cat.title || name
     }
 }
 

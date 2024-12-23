@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <%- partial('google-analytics') %>
   <%
+  var transform = createLandscapeCategoryTransform(site.data.categories)
   var title = page.title;
 
   if (is_archive()){
@@ -13,7 +14,7 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = __('category') + ': ' + page.category;
+    title = __('category') + ': ' + transform(page.category);
   } else if (is_tag()){
     title = __('tag') + ': ' + page.tag;
   }
